@@ -1,3 +1,5 @@
+#!/bin/sh
+
 for i in `docker ps -a |grep -i couchpotato |awk '{print $1}'`
 do
 	docker stop $i
@@ -17,4 +19,3 @@ docker run -dt --name couchpotato --restart=always \
 -e PGID=0 -e PUID=0 \
 -p 5050:5050 \
 linuxserver/couchpotato
-
