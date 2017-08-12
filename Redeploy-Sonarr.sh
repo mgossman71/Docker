@@ -14,6 +14,7 @@ done
 # --net=host \
 
 docker run -dt --name sonarr --restart=always \
+--net=host \
 -v /docker/sonarr:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \

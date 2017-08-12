@@ -13,6 +13,7 @@ done
 
 # --net=host \
 docker run -dt \
+--net=host \
 --name=plexrequests \
 --restart=always \
 -v /etc/localtime:/etc/localtime:ro \
