@@ -11,8 +11,8 @@ do
 	docker rmi $i
 done
 # --net=host \
+
 docker run -dt --name couchpotato --restart=always \
---net=host \
 -v /docker/couchpotato:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \

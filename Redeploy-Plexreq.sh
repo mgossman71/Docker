@@ -11,6 +11,7 @@ do
 	docker rmi $i
 done
 
+# --net=host \
 docker run -dt \
 --name=plexrequests \
 --restart=always \
@@ -19,4 +20,3 @@ docker run -dt \
 -e PGID=0 -e PUID=0  \
 -p 3000:3000 \
 linuxserver/plexrequests
-
