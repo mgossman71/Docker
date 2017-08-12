@@ -12,7 +12,6 @@ do
 done
 
 # --net=host \
-
 docker run -dt --name sonarr --restart=always \
 --net=host \
 -v /docker/sonarr:/config \
