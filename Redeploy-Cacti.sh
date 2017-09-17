@@ -12,7 +12,6 @@ do
 done
 
 # --net=host \
-docker run \
--dt \
+docker run -dt \
 -p 80:80  \
 quantumobject/docker-cacti

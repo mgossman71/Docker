@@ -17,7 +17,7 @@ docker run -dt \
 --name=plexrequests \
 --restart=always \
 -v /etc/localtime:/etc/localtime:ro \
--v /docker/plexreq:/config \
+-v /linux-tools/docker/plexreq:/config \
 -e PGID=0 -e PUID=0  \
 -p 3000:3000 \
 linuxserver/plexrequests

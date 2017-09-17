@@ -13,7 +13,7 @@ done
 
 docker run -dt --name plex --restart=always \
 --net=host \
--v /docker/plex:/config \
+-v /linux-tools/docker/plex:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \
 -e PGID=0 -e PUID=0 \

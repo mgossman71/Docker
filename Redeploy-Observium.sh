@@ -11,16 +11,15 @@ do
 	docker rmi $i
 done
 
-#mkdir -p /docker/observium/config
-#mkdir -p /docker/observium/logs
-#mkdir -p /docker/observium/rrd
+#mkdir -p /linux-tools/docker/observium/config
+#mkdir -p /linux-tools/docker/observium/logs
+#mkdir -p /linux-tools/docker/observium/rrd
 
 docker run -dt \
 --name observium \
 --restart=always \
--v /docker/observium/config:/config \
--v /docker/observium/logs:/opt/observium/logs \
--v /docker/observium/rrd:/opt/observium/rrd \
+-v /linux-tools/docker/observium/config:/config \
+-v /linux-tools/docker/observium/logs:/opt/observium/logs \
+-v /linux-tools/docker/observium/rrd:/opt/observium/rrd \
 -p 8668:8668 \
 zuhkov/observium
-
