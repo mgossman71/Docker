@@ -6,6 +6,11 @@ do
     docker rm $i
 done
 
+for i in `docker images |grep -i plex |awk '{print $3}'`
+do
+	docker rmi $i
+done
+
 docker run -dt --name plex2 --restart=always \
 --net=host \
 -v /linux-tools/docker/plex2:/config \
