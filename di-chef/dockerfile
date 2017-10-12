@@ -1,0 +1,10 @@
+FROM centos:latest
+RUN yum install -y wget
+RUN mkdir /tools
+RUN cd /tools
+RUN wget https://packages.chef.io/files/stable/chefdk/2.3.4/el/7/chefdk-2.3.4-1.el7.x86_64.rpm
+RUN yum install -y ./chefdk-2.3.4-1.el7.x86_64.rpm
+#RUN chef verify
+RUN mkdir /root/.chef
+ADD .chef/* /root/.chef/
+RUN knife ssl fetch
