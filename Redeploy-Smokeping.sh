@@ -18,4 +18,4 @@ docker run -dt --name smokeping --restart=always \
 -e TZ='America/Chicago' \
 -e PGID=0 -e PUID=0 \
 -p 80:80 \
-linuxserver/plex
+linuxserver/smokeping
