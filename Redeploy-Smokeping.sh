@@ -12,7 +12,6 @@ do
 done
 
 docker run -dt --name smokeping --restart=always \
---net=host \
 -v /linux-tools/docker/smokeping/data:/data \
 -v /linux-tools/docker/smokeping/config:/config \
 -e TZ='America/Chicago' \
