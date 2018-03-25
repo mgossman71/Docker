@@ -17,5 +17,5 @@ docker run -dt --name smokeping --restart=always \
 -v /linux-tools/docker/smokeping/config:/config \
 -e TZ='America/Chicago' \
 -e PGID=0 -e PUID=0 \
--p 80:83 \
+-p 80:80 \
 linuxserver/plex
