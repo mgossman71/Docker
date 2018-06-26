@@ -20,6 +20,7 @@ docker run -dt \
 -v /linux-tools/docker/plexreq:/config \
 -v /linux-tools/docker/sonarr:/sonarr \
 -v /linux-tools/docker/couchpotato:/couchpotato \
+-v //mnt/TV-Shows:/tv1
 -e PGID=0 -e PUID=0  \
 -p 3000:3000 \
 linuxserver/plexrequests
