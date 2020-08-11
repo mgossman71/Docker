@@ -6,10 +6,10 @@ do
     docker rm $i
 done
 
-for i in `docker images |grep -i plex |awk '{print $3}'`
-do
-	docker rmi $i
-done
+#for i in `docker images |grep -i plex |awk '{print $3}'`
+#do
+#	docker rmi $i
+#done
 
 #--net=host \
 docker run -dt --name plex --restart=always \
