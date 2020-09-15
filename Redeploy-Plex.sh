@@ -12,9 +12,9 @@ done
 #done
 
 #--net=host \
+# -v /linux-tools/docker/plex:/config \
 docker run -dt --name plex --restart=always \
---net=host \
--v /linux-tools/docker/plex:/config \
+-v /Volumes/plex-conf:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \
 -e PGID=0 -e PUID=0 \

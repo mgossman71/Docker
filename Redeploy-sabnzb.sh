@@ -13,7 +13,6 @@ done
 
 # --net=host \
 docker run -dt --name sabnzb --restart=always \
---net=host \
 -v /linux-tools/docker/sabnzb:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \

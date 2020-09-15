@@ -12,7 +12,6 @@ do
 done
 # --net=host \
 docker run -dt --name couchpotato --restart=always \
---net=host \
 -v /linux-tools/docker/couchpotato:/config \
 -v /mnt:/mnt \
 -e TZ='America/Chicago' \
